@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Gallery3D from "./components/Gallery3D";
 
@@ -10,15 +9,6 @@ export default function Home() {
   const [explosions, setExplosions] = useState<Array<{id: number, x: number, y: number, emoji: string}>>([]);
   const [copySuccess, setCopySuccess] = useState(false);
   
-  const angryMessages = [
-    "STOP TRYING TO SCAM ME!",
-    "I'M NOT YOUR EXIT LIQUIDITY!",
-    "NO MORE 'SIR' DMs!",
-    "DIAMOND HANDS ONLY!",
-    "RAGE MODE: ACTIVATED!",
-    "MUM'S MONEY IS GONE!",
-    "ANOTHER RUG PULL?!"
-  ];
 
   const handleClick = (e: React.MouseEvent) => {
     const emojis = ['💢', '😡', '🔥', '💥'];
@@ -86,6 +76,16 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const angryMessages = [
+      "STOP TRYING TO SCAM ME!",
+      "I'M NOT YOUR EXIT LIQUIDITY!",
+      "NO MORE 'SIR' DMs!",
+      "DIAMOND HANDS ONLY!",
+      "RAGE MODE: ACTIVATED!",
+      "MUM'S MONEY IS GONE!",
+      "ANOTHER RUG PULL?!"
+    ];
+    
     const interval = setInterval(() => {
       if (Math.random() < 0.1) {
         const message = angryMessages[Math.floor(Math.random() * angryMessages.length)];
@@ -148,7 +148,7 @@ export default function Home() {
           <p className="text-xl text-center leading-relaxed">
             Meet the angriest dev on Base! Constantly getting rekt, always the exit liquidity, 
             forever getting tricked into pumping his own bags. Scammers blow up his DMs 24/7. 
-            He's mad as hell and he's not gonna take it anymore!
+            He&apos;s mad as hell and he&apos;s not gonna take it anymore!
           </p>
         </div>
 
@@ -299,7 +299,7 @@ export default function Home() {
             This token is powered by pure, unfiltered rage. Side effects may include: 
             uncontrollable anger at jeets, addiction to blocking scammers, and an 
             overwhelming desire to diamond hand through every dip. 
-            Not suitable for paper hands or anyone named "ser".
+            Not suitable for paper hands or anyone named &quot;ser&quot;.
           </p>
         </div>
       </div>
@@ -312,7 +312,7 @@ export default function Home() {
             <p className="mb-2">
               This is a meme token with no intrinsic value or expectation of financial return. 
               There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only. 
-              Don't invest more than you can afford to lose (which should be nothing).
+              Don&apos;t invest more than you can afford to lose (which should be nothing).
             </p>
             <p>Built on Base • Powered by Rage • Fueled by Memes</p>
           </div>
