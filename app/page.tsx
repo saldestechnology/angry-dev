@@ -569,25 +569,20 @@ export default function Home() {
           </h2>
           <ul className="space-y-4">
             {[
-              "Phase 1: Get extremely angry about everything",
-              "Phase 2: Block all the scammers (impossible task)",
-              "Phase 3: Rage tweet about rug pulls daily",
-              "Phase 4: Become the angriest meme on Base",
-              "Phase 5: Still angry but with more holders",
-              "Phase 6: Moon while remaining perpetually mad",
-              "Phase 7: Execute galaxy brain 4D chess moves that smoothbrains can't comprehend",
-              "Phase 8: Prove IQ superiority to all paper handed beta cucks",
-              "Phase 9: Revolutionize entire crypto space while normies watch in awe",
-              "Phase 10: Become the most dangerous genius on the internet (final form)",
+              { text: "✅ 30M locked from dev wallet", completed: true },
+              { text: "✅ Blue tick paid for", completed: true },
+              { text: "Secret Base Trending at 20k", completed: false },
+              { text: "Dex paid & boost 20k", completed: false },
+              { text: "Angry VC at Friday 8PM UTC", completed: false },
             ].map((phase, i) => (
               <li
                 key={i}
-                className="bg-red-500/10 p-4 border-l-4 border-red-500 rounded relative pl-12"
+                className={`${phase.completed ? 'bg-green-500/20 border-l-4 border-green-500' : 'bg-red-500/10 border-l-4 border-red-500'} p-4 rounded relative pl-12`}
               >
                 <span className="absolute left-4 top-4 text-xl">
-                  {i >= 6 ? "🧠" : "🔥"}
+                  {phase.completed ? "✅" : "🔥"}
                 </span>
-                <strong>{phase}</strong>
+                <strong className={phase.completed ? 'text-green-400' : 'text-white'}>{phase.text}</strong>
               </li>
             ))}
           </ul>
