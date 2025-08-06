@@ -12,7 +12,7 @@ export default function Home() {
 
   const handleClick = (e: React.MouseEvent) => {
     const emojis = ['💢', '😡', '🔥', '💥'];
-    const newSparks = [];
+    const newSparks: Array<{id: number, x: number, y: number, emoji: string}> = [];
     
     for (let i = 0; i < 5; i++) {
       newSparks.push({
