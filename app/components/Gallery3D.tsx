@@ -22,13 +22,11 @@ export default function Gallery3D() {
               mosaic-item relative rounded-2xl overflow-hidden shadow-2xl shadow-red-500/40 
               transition-all duration-300 border-4 border-red-500 
               hover:scale-105 hover:shadow-red-500/80 hover:z-10
-              ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}
-              ${index === 2 ? 'lg:col-span-2' : ''}
-              ${index === 4 ? 'md:col-span-2' : ''}
+              aspect-square
+              ${index === 0 ? 'md:col-span-2 md:row-span-2 md:aspect-square' : ''}
+              ${index === 2 ? 'lg:col-span-2 lg:aspect-[2/1]' : ''}
+              ${index === 4 ? 'md:col-span-2 md:aspect-[2/1]' : ''}
             `}
-            style={{
-              aspectRatio: index === 0 ? '1' : index === 2 || index === 4 ? '2/1' : '3/4',
-            }}
           >
             <Image
               src={image.src}

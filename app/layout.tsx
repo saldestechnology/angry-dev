@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   creator: "Angry Dev",
   publisher: "Angry Dev",
   icons: {
-    icon: [],
+    icon: "/images/angry_dev.jpg",
   },
   openGraph: {
     type: "website",
