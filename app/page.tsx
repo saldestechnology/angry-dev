@@ -166,7 +166,7 @@ export default function Home() {
 
       <div className="max-w-6xl mx-auto px-5">
         {/* Header */}
-        <header className="text-center py-12 relative">
+        <header className="text-center py-20 relative">
           <div className="absolute top-3 left-1/2 transform -translate-x-1/2 text-5xl animate-shake">
             😡💢🔥
           </div>
@@ -206,7 +206,7 @@ export default function Home() {
             { number: "∞", label: "Scam DMs Received" },
             { number: "100%", label: "Exit Liquidity Rate" },
             { number: "24/7", label: "Anger Level" },
-            { number: "0", label: "Chill Pills Taken" },
+            { number: "0", label: "Social Skills" },
           ].map((stat, i) => (
             <div
               key={i}
@@ -232,7 +232,7 @@ export default function Home() {
             "I'm not falling for another 'diamond hands' DM! - Angry Dev, definitely",
             "STOP SENDING ME RANDOM TOKENS! - Angry Dev, every day",
             "This is my villain origin story! - Angry Dev, right now",
-            "Had to borrow money from mum and dad just to keep dev! - Angry Dev, broke AF",
+            "Had to borrow money from mum and dad just to keep up the dev! - Angry Dev, broke AF",
           ].map((quote, i) => (
             <div
               key={i}
@@ -252,7 +252,7 @@ export default function Home() {
             {[
               { title: "Supply", value: "1,000,000,000 $ANGRY" },
               { title: "Tax", value: "0% (We're angry, not greedy)" },
-              { title: "LP", value: "Burned Forever" },
+              { title: "LP", value: "Locked Forever" },
               { title: "Contract", value: "Renounced (Obviously)" },
             ].map((item, i) => (
               <div key={i} className="text-center">
