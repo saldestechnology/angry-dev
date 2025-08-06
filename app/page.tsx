@@ -152,8 +152,12 @@ export default function Home() {
               A
             </div>
             <div className="flex-1 min-w-0">
-              <div className="font-semibold text-sm text-gray-900 mb-1">Angry Dev</div>
-              <div className="text-sm text-gray-700 break-words">{popupMessage}</div>
+              <div className="font-semibold text-sm text-gray-900 mb-1">
+                Angry Dev
+              </div>
+              <div className="text-sm text-gray-700 break-words">
+                {popupMessage}
+              </div>
               <div className="text-xs text-gray-400 mt-1">now</div>
             </div>
           </div>
@@ -228,7 +232,7 @@ export default function Home() {
             "I'm not falling for another 'diamond hands' DM! - Angry Dev, definitely",
             "STOP SENDING ME RANDOM TOKENS! - Angry Dev, every day",
             "This is my villain origin story! - Angry Dev, right now",
-            "Had to borrow money from mum and dad just to keep developing! - Angry Dev, broke AF",
+            "Had to borrow money from mum and dad just to keep dev! - Angry Dev, broke AF",
           ].map((quote, i) => (
             <div
               key={i}
