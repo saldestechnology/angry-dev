@@ -104,7 +104,7 @@ export default function Home() {
 
         setTimeout(() => {
           setPopupMessage(null);
-        }, 3000);
+        }, 8000);
       }
     }, 5000);
 
