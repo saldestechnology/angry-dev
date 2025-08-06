@@ -10,11 +10,18 @@ export default function Gallery3D() {
     { src: "/images/angry_feelings.jpg", alt: "Angry Feelings" },
     { src: "/images/angry_volcano.jpg", alt: "Angry Volcano" },
     { src: "/images/borrow_money_from_mum_and_dad_to_dev.jpg", alt: "Borrowing Money to Dev" },
+    { src: "/images/2025-08-06 01.11.43.jpg", alt: "Hair-Pulling Market Crash" },
+    { src: "/images/2025-08-06 01.11.51.jpg", alt: "Crying Over Empty Wallet" },
+    { src: "/images/2025-08-06 01.11.58.jpg", alt: "Laser-Eyed Breakdown" },
+    { src: "/images/2025-08-06 10.49.56.jpg", alt: "Chart Watching Depression" },
+    { src: "/images/2025-08-06 10.50.04.jpg", alt: "Business Suit Defeat" },
+    { src: "/images/2025-08-06 10.50.11.jpg", alt: "Couch Rage Mode" },
+    { src: "/images/2025-08-06 10.50.17.jpg", alt: "Late-Night Coding Fury" },
   ];
 
   return (
     <div className="gallery-section mb-16 w-full">
-      <div className="mosaic-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 px-4">
+      <div className="mosaic-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-4">
         {images.map((image, index) => (
           <div
             key={index}
@@ -26,6 +33,8 @@ export default function Gallery3D() {
               ${index === 0 ? 'md:col-span-2 md:row-span-2 md:aspect-square' : ''}
               ${index === 2 ? 'lg:col-span-2 lg:aspect-[2/1]' : ''}
               ${index === 4 ? 'md:col-span-2 md:aspect-[2/1]' : ''}
+              ${index === 6 ? 'lg:col-span-2 lg:aspect-[2/1]' : ''}
+              ${index === 9 ? 'md:col-span-2 md:aspect-[2/1]' : ''}
             `}
           >
             <Image
