@@ -88,12 +88,12 @@ export default function Home() {
 
   useEffect(() => {
     const angryMessages = [
-      "I'M NOT YOUR EXIT LIQUIDITY!",
-      "NO MORE 'SER' DMs!",
-      "DIAMOND HANDS ONLY!",
-      "RAGE MODE: ACTIVATED!",
-      "MUM'S MONEY IS GONE!",
-      "THE KOL RAN OFF WITH MY MONEY AGAIN!",
+      "📱 I'M NOT YOUR EXIT LIQUIDITY!",
+      "📱 NO MORE 'SER' DMs!",
+      "📱 DIAMOND HANDS ONLY!",
+      "📱 RAGE MODE: ACTIVATED!",
+      "📱 MUM'S MONEY IS GONE!",
+      "📱 THE KOL RAN OFF WITH MY MONEY AGAIN!",
     ];
 
     const interval = setInterval(() => {
@@ -146,8 +146,17 @@ export default function Home() {
 
       {/* Popup Messages */}
       {popupMessage && (
-        <div className="fixed top-5 right-5 bg-red-600 text-white px-5 py-3 rounded-lg font-bold z-50 animate-slide-in">
-          {popupMessage}
+        <div className="fixed top-5 right-5 bg-white text-gray-800 px-4 py-3 rounded-xl shadow-2xl z-50 animate-slide-in max-w-xs border border-gray-200">
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
+              A
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="font-semibold text-sm text-gray-900 mb-1">Angry Dev</div>
+              <div className="text-sm text-gray-700 break-words">{popupMessage}</div>
+              <div className="text-xs text-gray-400 mt-1">now</div>
+            </div>
+          </div>
         </div>
       )}
 
