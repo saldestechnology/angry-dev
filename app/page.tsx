@@ -318,6 +318,14 @@ export default function Home() {
               📱 JOIN THE RAGE
             </a>
           </div>
+          <div className="flex justify-center">
+            <a 
+              href="/manifesto"
+              className="bg-gradient-to-r from-black to-gray-800 text-white px-8 py-4 rounded-lg font-bold text-xl border-2 border-red-500 hover:shadow-2xl hover:-translate-y-1 transition-all"
+            >
+              WHITEPAPER
+            </a>
+          </div>
           
           {/* Scroll Down Indicator */}
           <div className="animate-bounce">
