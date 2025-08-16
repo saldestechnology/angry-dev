@@ -16,7 +16,6 @@ export default function Home() {
     Array<{ id: number; x: number; y: number; message: string }>
   >([]);
   const [iqTestResult, setIqTestResult] = useState<string | null>(null);
-  const [showIqTest, setShowIqTest] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
 
@@ -318,7 +317,7 @@ export default function Home() {
               📱 JOIN THE RAGE
             </a>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-8">
             <a 
               href="/manifesto"
               className="bg-gradient-to-r from-black to-gray-800 text-white px-8 py-4 rounded-lg font-bold text-xl border-2 border-red-500 hover:shadow-2xl hover:-translate-y-1 transition-all"
@@ -328,7 +327,7 @@ export default function Home() {
           </div>
           
           {/* Scroll Down Indicator */}
-          <div className="animate-bounce">
+          <div className="animate-bounce mt-8">
             <div className="text-white/60 text-sm mb-2">SCROLL DOWN FOR MORE ANGER</div>
             <div className="text-2xl text-red-400">⬇️</div>
           </div>

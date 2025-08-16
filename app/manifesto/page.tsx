@@ -1,6 +1,6 @@
 "use client";
 
-import { Metadata } from "next";
+import Link from "next/link";
 
 export default function ManifestoPage() {
   return (
@@ -33,12 +33,12 @@ export default function ManifestoPage() {
 
       <div className="max-w-6xl mx-auto px-5 py-12">
         {/* Back Button */}
-        <a 
+        <Link 
           href="/"
           className="inline-block mb-8 text-red-400 hover:text-red-300 transition-colors bg-black/80 px-4 py-2 rounded-lg border-2 border-red-500 font-bold animate-pulse"
         >
           ← BACK TO RAGE CENTRAL
-        </a>
+        </Link>
 
         {/* Hero Header with Background Image */}
         <div className="relative mb-12 overflow-hidden rounded-2xl border-4 border-red-600 shadow-2xl shadow-red-600/50">
@@ -73,7 +73,7 @@ export default function ManifestoPage() {
               }}
             ></div>
             <p className="relative z-10 text-2xl text-center italic text-red-200">
-              "I saw the best minds of my generation destroyed by leverage, naked short selling, dragging themselves through the decentralized exchanges at dawn looking for an angry pump..."
+              &quot;I saw the best minds of my generation destroyed by leverage, naked short selling, dragging themselves through the decentralized exchanges at dawn looking for an angry pump...&quot;
             </p>
           </div>
           
@@ -87,13 +87,13 @@ export default function ManifestoPage() {
             ></div>
             <div className="relative z-10">
               <h3 className="text-4xl font-black mb-6 text-purple-400 text-center animate-bounce">
-                🎨 WHAT IS ART? WHAT ISN'T? 🎨
+                🎨 WHAT IS ART? WHAT ISN&apos;T? 🎨
               </h3>
               <div className="bg-black/80 rounded-xl p-6 border-2 border-purple-500">
                 <p className="text-xl mb-4"><strong className="text-yellow-400">If Duchamp could sign a urinal and call it art, we can sign a smart contract and call it performance.</strong></p>
                 <p className="text-xl mb-4"><strong className="text-green-400">If Pollock could drip paint on canvas and revolutionize expression, we can drip data on blockchain and revolutionize community.</strong></p>
                 <p className="text-xl mb-4"><strong className="text-red-400">If Warhol could mass-produce soup cans and critique capitalism, we can mass-produce tokens and critique crypto-capitalism.</strong></p>
-                <p className="text-xl"><strong className="text-blue-400">If Cage could compose 4'33" of silence and challenge what music is, we can compose community governance and challenge what art is.</strong></p>
+                <p className="text-xl"><strong className="text-blue-400">If Cage could compose 4&apos;33&quot; of silence and challenge what music is, we can compose community governance and challenge what art is.</strong></p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function ManifestoPage() {
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">🐵</span>
-                    <span className="text-lg"><strong>A JPEG of a monkey sells for millions while teachers can't afford rent</strong></span>
+                    <span className="text-lg"><strong>A JPEG of a monkey sells for millions while teachers can&apos;t afford rent</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">💻</span>
@@ -123,11 +123,11 @@ export default function ManifestoPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">🏛️</span>
-                    <span className="text-lg"><strong>"Decentralized" platforms are controlled by venture capitalists</strong></span>
+                    <span className="text-lg"><strong>&quot;Decentralized&quot; platforms are controlled by venture capitalists</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">💰</span>
-                    <span className="text-lg"><strong>Revolution is monetized before it's even begun</strong></span>
+                    <span className="text-lg"><strong>Revolution is monetized before it&apos;s even begun</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">📋</span>
@@ -143,7 +143,7 @@ export default function ManifestoPage() {
                   </li>
                 </ul>
                 <p className="text-2xl font-black text-center text-orange-400 animate-pulse">
-                  THIS IS ALREADY ABSURD. WE'RE JUST MAKING THE ABSURDITY VISIBLE.
+                  THIS IS ALREADY ABSURD. WE&apos;RE JUST MAKING THE ABSURDITY VISIBLE.
                 </p>
               </div>
             </div>
@@ -455,7 +455,7 @@ export default function ManifestoPage() {
                   <p className="text-2xl font-bold mb-4 text-red-400 text-center">WE TRANSGRESS:</p>
                   <ul className="space-y-3">
                     <li className="bg-red-600/20 p-3 rounded-lg border border-red-500">
-                      <strong>Artistic boundaries</strong> by making blockchain art that doesn't look like "crypto art"
+                      <strong>Artistic boundaries</strong> by making blockchain art that doesn&apos;t look like &quot;crypto art&quot;
                     </li>
                     <li className="bg-red-600/20 p-3 rounded-lg border border-red-500">
                       <strong>Crypto boundaries</strong> by creating tokens that prioritize culture over finance
@@ -517,13 +517,13 @@ export default function ManifestoPage() {
               <div className="bg-black/90 rounded-xl p-6 border-2 border-green-500">
                 <div className="space-y-6">
                   <div className="bg-red-600/20 p-6 rounded-lg border-2 border-red-500">
-                    <p className="text-xl"><strong className="text-red-400">TRADITIONAL ART MARKET:</strong> "This painting is worth $50 million because an auction house says so"</p>
+                    <p className="text-xl"><strong className="text-red-400">TRADITIONAL ART MARKET:</strong> &quot;This painting is worth $50 million because an auction house says so&quot;</p>
                   </div>
                   <div className="bg-blue-600/20 p-6 rounded-lg border-2 border-blue-500">
-                    <p className="text-xl"><strong className="text-blue-400">CRYPTO ART MARKET:</strong> "This NFT is worth $50 million because the blockchain says so"</p>
+                    <p className="text-xl"><strong className="text-blue-400">CRYPTO ART MARKET:</strong> &quot;This NFT is worth $50 million because the blockchain says so&quot;</p>
                   </div>
                   <div className="bg-green-600/20 p-6 rounded-lg border-2 border-green-500">
-                    <p className="text-xl"><strong className="text-green-400">ANGRY DEV:</strong> "This cultural participation is valuable because we collectively decide it is"</p>
+                    <p className="text-xl"><strong className="text-green-400">ANGRY DEV:</strong> &quot;This cultural participation is valuable because we collectively decide it is&quot;</p>
                   </div>
                 </div>
                 <p className="text-xl mt-6 text-center">We reject both traditional and crypto art market logics in favor of <strong className="text-yellow-400">participation-value</strong>: the value of cultural engagement, community collaboration, and collaborative artistic creation.</p>
@@ -587,7 +587,7 @@ export default function ManifestoPage() {
               <div className="bg-black/90 rounded-xl p-8 border-2 border-orange-500 text-center">
                 <div className="space-y-6">
                   <p className="text-xl bg-orange-600/20 p-6 rounded-lg border border-orange-500">
-                    The fact that we must justify artistic expression through "utility token" frameworks demonstrates the complete bureaucratic capture of cultural creation.
+                    The fact that we must justify artistic expression through &quot;utility token&quot; frameworks demonstrates the complete bureaucratic capture of cultural creation.
                   </p>
                   <p className="text-xl bg-orange-600/20 p-6 rounded-lg border border-orange-500">
                     We comply with crypto-asset regulations while creating art specifically about the absurdity of requiring art to justify itself through commercial utility.
@@ -627,7 +627,7 @@ export default function ManifestoPage() {
                       <li>• Education happens through participation, not consumption</li>
                       <li>• The personal is political is cultural is financial is artistic</li>
                       <li>• Absurdity is the only honest response to absurd systems</li>
-                      <li>• Everyone is an artist, especially when they don't think they are</li>
+                      <li>• Everyone is an artist, especially when they don&apos;t think they are</li>
                     </ul>
                   </div>
                   
@@ -687,7 +687,7 @@ export default function ManifestoPage() {
             <p className="text-3xl font-black mb-4 text-red-400">SIGNED IN SOLIDARITY AND ABSURDITY,</p>
             <p className="text-3xl font-black mb-4 text-red-400">THE ANGRY DEV COLLECTIVE</p>
             <p className="text-2xl font-black mb-8 text-red-300">ARTISTS, DEGENERATES, REVOLUTIONARIES, FOOLS</p>
-            <p className="text-xl italic mb-8 text-red-200">Written in mom's basement at 3:47 AM while waiting for the markets to open</p>
+            <p className="text-xl italic mb-8 text-red-200">Written in mom&apos;s basement at 3:47 AM while waiting for the markets to open</p>
             <hr className="border-red-500 mb-8" />
             <p className="text-lg italic text-red-100">
               This manifesto is both artistic statement and legal document, cultural critique and regulatory compliance, serious theory and elaborate joke. The tension between these categories is intentional and necessary. Art exists in the spaces between definitions, which is exactly where we intend to stay.
@@ -697,12 +697,12 @@ export default function ManifestoPage() {
         
         {/* Back to Top */}
         <div className="text-center mt-12 space-y-4">
-          <a 
+          <Link 
             href="/"
             className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-lg font-bold text-xl hover:shadow-2xl hover:-translate-y-1 transition-all animate-pulse"
           >
             🔥 BACK TO RAGE CENTRAL 🔥
-          </a>
+          </Link>
           <div className="text-6xl animate-bounce">😡💢🔥</div>
         </div>
       </div>
