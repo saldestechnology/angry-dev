@@ -576,11 +576,15 @@ export default function Home() {
           </h2>
           <ul className="space-y-4">
             {[
-              { text: "✅ 30M locked from dev wallet", completed: true },
-              { text: "✅ Blue tick paid for", completed: true },
-              { text: "Secret Base Trending at 20k", completed: false },
-              { text: "Dex paid & boost 20k", completed: false },
-              { text: "Angry VC at Friday 8PM UTC", completed: false },
+              { text: "✅ Fully integrated Telegram token launcher with fair launch & bonding curve", completed: true },
+              { text: "✅ Angry paired LPs on Uniswap upon bonding completion", completed: true },
+              { text: "✅ Angry wallet & DEX integrated into Telegram", completed: true },
+              { text: "✅ Simplified and intuitive Telegram UI", completed: true },
+              { text: "✅ Smart contract specialist onboarded for game theory contracts", completed: true },
+              { text: "🔥 Angry paired custom smart contracts with game theory mechanics", completed: false },
+              { text: "🔥 Web UI for Angry DEX in development", completed: false },
+              { text: "🔥 Strategic collaborations with similar sized projects lined up", completed: false },
+              { text: "🔥 Angry PVP area integration coming soon", completed: false },
             ].map((phase, i) => (
               <li
                 key={i}
